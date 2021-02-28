@@ -1,0 +1,97 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+  }
+
+strong {
+    width: 90%;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 300px;
+    height: 285px;
+    margin: 15px;
+    background-color: white;
+    font-family: OpenSans;
+}
+
+.card:hover {
+    width: 340px;
+    height: 325px;
+    /* transform: rotate(-5deg);*/
+}
+
+.parent {
+    position: relative;
+    top:0;
+}
+
+.playList {
+    position: absolute;;
+    top:0;
+    right: 0;
+    width: 45%;
+    height: 97%;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bolder;
+    opacity: 0.5;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.videoCountOverlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 40%;
+}
+
+.list-icon {
+    width: 12px;
+    height: 12px;
+    color: white;
+}
+
+.bannerImage {
+    width: 100%;
+}
+
+.title {
+    margin: 2.5%;
+    display: flex;
+    text-align: start;
+}
+
+.thumbnail {
+    float: right;
+}
+
+.Details {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2.5%;
+    font-size: 9px;
+    font-weight: bolder;
+}
+
+.time {
+    width: 13px;
+    height: 10px;
+}
+
+.inlineDetails {
+    line-height: 12px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(0, 106, 228);
+    margin-left: 2.5%;
+}
