@@ -2,7 +2,6 @@ import React ,{Component}from 'react';
 import './Card.css';
 import time from '../assets/icons/timer-outline.svg';
 import track from '../assets/icons/race-track.svg';
-import list from '../assets/icons/list-outline.svg';
 
 
 export default class Card extends Component {
@@ -35,7 +34,7 @@ export default class Card extends Component {
     render() {
     let details, detailsLink, banner;
     if(this.props.video === true) {
-        details = <span><img className="time" src={time} /> <strong>{this.props.time}</strong> &nbsp; &nbsp; <img className="time" src={track} /> <strong>{this.props.distance}</strong></span>;
+        details = <span><img className="time" src={time} alt=""/> <strong>{this.props.time}</strong> &nbsp; &nbsp; <img className="time" src={track} alt=""/> <strong>{this.props.distance}</strong></span>;
     } else {
         details = "";
     }
@@ -48,7 +47,7 @@ export default class Card extends Component {
 
     if(this.props.playlist === true) {
         banner = <div className="parent">
-                <img className="bannerImage" src={this.props.image} />
+                <img className="bannerImage" src={this.props.image} alt=""/>
                 <div className="playList">
                     <div className="videoCountOverlay">
                         {this.props.noOfWorkoutVideos}
@@ -59,7 +58,7 @@ export default class Card extends Component {
                 </div>
         </div>;
     } else {
-        banner = <img className="bannerImage" src={this.props.image} />;
+        banner = <img className="bannerImage" src={this.props.image} alt=""/>;
     }
 
     return (
@@ -67,7 +66,7 @@ export default class Card extends Component {
             {banner}
             <div className="title">
                 <strong>{this.props.title}</strong>
-                <img className="thumbnail" src={this.props.thumbnail} />
+                <img className="thumbnail" src={this.props.thumbnail} alt=""/>
             </div>
             <div className="Details">
                 {details}
